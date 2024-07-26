@@ -1,21 +1,22 @@
 ## Start Development Server for Frontend 
-'''
+```
 cd client 
+npm i
 npm run dev
-'''
+```
 
 ## Start Development Server for Backend 
 - in new terminal 
-'''
+```
 cd server
-'''
-activate virtual environment then
-'''
+pip install -r requirements.txt
 python manage.py runserver
-'''
+```
 
 
 
-# TO activate virtual environment
+## To activate virtual environment
 for mac
-- source .venv/bin/activate
+```
+source .venv/bin/activate
+```
