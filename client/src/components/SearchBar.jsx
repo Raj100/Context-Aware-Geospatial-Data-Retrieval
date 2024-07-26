@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { defaultSearch } from "../features/SearchSlice/SearchSlice";
 const SearchBar = () => {
     const dispatch = useDispatch();
@@ -20,8 +20,8 @@ const SearchBar = () => {
                         <option value="FR">France</option>
                         <option value="DE">Germany</option>
                     </select>
-                    <textarea value={search} onChange={(e)=>{setSearch(e.target.value)}} rows="1" cols="10" className='mr-2 p-1.5 h-10 grow bg-transparent px-4 rounded-lg text-black  border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500' type="text" placeholder='Search' />
-                    <button onClick={handleSubmit} type="submit" className='bg-blue-500 hover:bg-blue-600 px-2 text-white rounded-lg lg:px-10 h-10'>Search</button>
+                    <textarea value={search} onChange={(e)=>{setSearch(e.target.value)}} rows="1" cols="10" className='mr-2 p-1.5 h-10 grow bg-transparent px-4 rounded-lg  border border-[#70675b] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500' type="text" placeholder='Search' />
+                    <button onClick={handleSubmit} type="submit" className='bg-blue-700 hover:bg-blue-800 px-2 text-white rounded-lg lg:px-10 h-10'>Search</button>
                 </div>
             </form>
         </>

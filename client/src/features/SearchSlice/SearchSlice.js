@@ -8,7 +8,7 @@ export const defaultSearch =createAsyncThunk(
     async(data)=>{
         try {
             const res = await axios.post(
-              `http://127.0.0.1:5000/search`,
+              `http://127.0.0.1:8000/search`,
               {
                 Search: data,
               }
@@ -32,7 +32,7 @@ const SearchSlice = createSlice({
     },
     extraReducers: (builder)=>{
       builder
-      .addCase(defaultSearch.pending,(state,action)=>{
+      .addCase(defaultSearch.pending,(state)=>{
         console.log("loading..");
         state.value="loading..."
       })
