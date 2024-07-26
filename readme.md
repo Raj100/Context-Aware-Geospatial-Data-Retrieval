@@ -18,4 +18,4 @@ python manage.py runserver
 
 # TO activate virtual environment
 for mac
-source myenv/bin/activate
+- source .venv/bin/activate
