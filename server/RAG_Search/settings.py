@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*3($*nnjeqt^f4y*#rt1ss@$rl21-@9s8v3==le2ui7*!phv4o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["http://localhost:3000"]
+ALLOWED_HOSTS = ["http://localhost:3000","*" ,"http://localhost:5173","http://localhost:5174","http://localhost:5175"]
 
 
 # Application definition
@@ -82,10 +82,11 @@ WSGI_APPLICATION = 'RAG_Search.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "OPTIONS": {
-            "service": "my_service",
-            "passfile": ".my_pgpass",
-        },
+        'NAME': 'postgres',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
